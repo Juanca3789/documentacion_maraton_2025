@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=2cm}
+
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  showstringspaces=false,
+  breaklines=true,
+  tabsize=2
+}
+
+\title{Documentación Técnica – ICPC 2025}
+\author{Equipo XYZ – Universidad ABC}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Plantillas de Código}
+
+\subsection{I/O rápido en C++}
+Se encargan de desincronizar el cin y el cout con el fin de eliminar el overhead y alcanzar una velocidad similar al printf y scanf de C.
+\begin{lstlisting}
+ios::sync_with_stdio(false);
+cin.tie(nullptr);
+\end{lstlisting}
+
+\subsection{Macros utiles para el lenguaje}
+\begin{enumerate} [label=\alph*.]
+  \item Atajos de sintaxis
+\begin{lstlisting}
+  #define pb push_back //metodo de insercion comun en vectores
+  #define mp make_pair //construccion de pares en ejecucion para maps
+  #define all(x) (x).begin(), (x).end() //util para sort y otros metodos que requieren iteradorres inicio y fin
+  #define rall(x) (x).rbegin(), (x).rend() //igual que all pero en orden inverso
+  #define sz(x) (int)((x).size()) //longitud de las principales DS std
+\end{lstlisting}
+  \item Tipos de datos frecuentes
+\begin{lstlisting}
+  #define ll long long //entero 64 bits (maximo espacio c++)
+  #define ull unsigned long long //igual a ll, para casos sin negativos
+  //vectores de los tipos principales
+  #define vi  vector<int>
+  #define vll vector<long long>
+  #define vd  vector<double>
+  #define vs  vector<string>
+\end{lstlisting}
+  \item Bucles rapidos
+\begin{lstlisting}
+  #define FOR(i,a,b) for(long long i=(a); i<(b); i++) //Bucle for 1 a 1 desde a hasta b
+  #define REP(i,n)   for(long long i=0; i<(n); i++) //Bucle for 1 a 1 de 0 a n (Ideal para recorrer todo un vector)
+  #define ROF(i,a,b) for(long long i=(a); i>=(b); i--) //Bucle descendente 1 a 1 de a hasta b
+\end{lstlisting}
+  \item Constantes
+\begin{lstlisting}
+  #define INF 1000000000 //Posible infinito para int 
+  #define LINF 1000000000000000000LL //Posible infinito para long long
+  #define MOD 1000000007 //Constante 10^9 + 7 para problemas gigantes
+  #define MOD2 998244353 //Otra constante modular menos usada
+  #define EPS 1e-9 //Margen de error para operaciones punto flotante
+\end{lstlisting}
+  \item Debugging rapido (No sabemos debuggear)
+\begin{lstlisting}
+  #define debug(x) cerr << #x << " = " << (x) << endl //Se usa cerr ya que no es evaluado por el juez
+  #define debugv(v) { cerr << #v << " = "; for(auto _ : v) cerr << _ << " "; cerr << endl; }
+\end{lstlisting}
+\end{enumerate}
+
+\section{Tablas de Complejidad}
+\begin{itemize}
+  \item \texttt{vector}: acceso $O(1)$, inserción al final $O(1)$ amortizado
+  \item \texttt{set/map}: inserción/búsqueda $O(\log n)$
+  \item \texttt{unordered\_map}: inserción/búsqueda $O(1)$ promedio
+\end{itemize}
+
+\section{Fórmulas Matemáticas}
+\[
+\sum_{i=1}^n i = \frac{n(n+1)}{2}
+\]
+\[
+\text{Área de triángulo (Herón)} = \sqrt{s(s-a)(s-b)(s-c)}
+\]
+
+\section{Estrategia de Equipo}
+Roles, protocolos de clarifications, rotación de teclado.
+
+\end{document}
