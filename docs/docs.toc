@@ -2,6 +2,7 @@
 \contentsline {section}{\numberline {1}Plantillas de Código}{2}{}%
 \contentsline {subsection}{\numberline {1.1}I/O rápido en C++}{2}{}%
 \contentsline {subsection}{\numberline {1.2}Macros utiles para el lenguaje}{2}{}%
-\contentsline {section}{\numberline {2}Tablas de Complejidad}{2}{}%
-\contentsline {section}{\numberline {3}Fórmulas Matemáticas}{3}{}%
-\contentsline {section}{\numberline {4}Estrategia de Equipo}{3}{}%
+\contentsline {section}{\numberline {2}Lectura de casos}{3}{}%
+\contentsline {section}{\numberline {3}Tablas de Complejidad}{5}{}%
+\contentsline {section}{\numberline {4}Fórmulas Matemáticas}{5}{}%
+\contentsline {section}{\numberline {5}Estrategia de Equipo}{6}{}%

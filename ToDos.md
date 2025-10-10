@@ -1,9 +1,9 @@
 # ✅ TODO List – Documentación impresa ICPC 2025
 
 ## 1. Plantillas de código
-- [ ] I/O rápido en C++
-- [ ] Macros útiles (`all(x)`, `pb`, etc.)
-- [ ] Lectura de casos múltiples
+- [*] I/O rápido en C++
+- [*] Macros útiles (`all(x)`, `pb`, etc.)
+- [*] Lectura de casos múltiples
 - [ ] Stack, Queue, Deque, Priority Queue
 - [ ] Union-Find (DSU)
 - [ ] Segment Tree (con lazy propagation)
